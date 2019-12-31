@@ -13,12 +13,9 @@ class App extends Component {
 
   render() {
     return (
-      <div>
-        <aside>
-          <Sidebar />
-        </aside>
-        <main></main>
-      </div>
+      <main className="body">
+        <Sidebar />
+      </main>
     );
   }
 }

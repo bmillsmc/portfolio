@@ -1,5 +1,11 @@
 .sidebar {
   background: lightblue;
+  height: 60%;
+  width: 10vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
 }
 
 .sidebar a {
@@ -9,4 +15,5 @@
 
 .sidebar h3 {
   margin: 0;
+  font-size: 2vw;
 }
