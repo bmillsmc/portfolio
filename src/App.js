@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import "./App.css";
 // import { Route } from "react-router-dom";
-// import Sidebar from "./components/Sidebar/Sidebar";
+import Sidebar from "./components/Sidebar/Sidebar";
 
 //TODO: pass state for sidebar being open or shut with a mouseover event
 
@@ -14,10 +14,10 @@ class App extends Component {
   render() {
     return (
       <div>
-        <aside>{/* <Sidebar /> */}</aside>
-        <main>
-          <h1>temp</h1>
-        </main>
+        <aside>
+          <Sidebar />
+        </aside>
+        <main></main>
       </div>
     );
   }

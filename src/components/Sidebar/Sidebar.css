@@ -1,0 +1,12 @@
+.sidebar {
+  background: lightblue;
+}
+
+.sidebar a {
+  text-decoration: none;
+  color: blanchedalmond;
+}
+
+.sidebar h3 {
+  margin: 0;
+}

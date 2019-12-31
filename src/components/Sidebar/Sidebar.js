@@ -1,21 +1,24 @@
 import React from "react";
-import Link from "react-router-dom";
+import { Link } from "react-router-dom";
+import "./Sidebar.css";
 
 function Sidebar() {
   return (
-    <nav>
+    <nav className="sidebar">
       <Link to="/">
-        <li>Home</li>
+        <h3>Home</h3>
       </Link>
       <Link to="/about">
-        <li>About</li>
+        <h3>About</h3>
       </Link>
       <Link to="/projects">
-        <li>Projects</li>
+        <h3>Projects</h3>
       </Link>
       <Link to="/contact">
-        <li>Contact</li>
+        <h3>Contact</h3>
       </Link>
     </nav>
   );
 }
+
+export default Sidebar;
