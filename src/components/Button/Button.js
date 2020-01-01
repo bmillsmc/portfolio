@@ -1,5 +1,6 @@
 import React from "react";
 import "./Button.css";
+import { Redirect } from "react-router-dom";
 
 function Button(props) {
   if (props.link[0] === "/") {
@@ -8,13 +9,13 @@ function Button(props) {
         type="submit"
         value={props.text}
         onClick={() => {
-          <Redirect to={props.link} />;
+          return <Redirect to={props.link} />;
         }}
       />
     );
   }
   return (
-    <a src={props.link}>
+    <a href={props.link} target="_blank" rel="noopener noreferrer">
       <input type="submit" value={props.text} />
     </a>
   );

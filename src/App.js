@@ -4,6 +4,7 @@ import { Route } from "react-router-dom";
 import Sidebar from "./components/Sidebar/Sidebar";
 import Home from "./components/Home/Home";
 import About from "./components/About/About";
+// import Resume from "./components/Resume/Resume";
 
 //TODO: pass state for sidebar being open or shut with a mouseover event
 
@@ -32,6 +33,13 @@ class App extends Component {
             return <About />;
           }}
         />
+        {/* <Route
+          path="/resume"
+          exact
+          render={() => {
+            return <Resume />;
+          }}
+        /> */}
       </main>
     );
   }
