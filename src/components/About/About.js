@@ -1,11 +1,12 @@
 import React from "react";
 import "./About.css";
+import headshot from "../../images/headshot.jpg";
 // import Button from "../Button/Button";
 
 function About() {
   return (
     <div className="about">
-      <img src="../../images/headshot.jpg" alt="Ben Miller headshot" />
+      <img src={headshot} alt="Ben Miller headshot" />
       <p>
         ey what up, its ya boy big b mills comin at you again with another
         minecraft tutorial. todays episode will be centered around job searching
@@ -25,3 +26,5 @@ function About() {
     </div>
   );
 }
+
+export default About;

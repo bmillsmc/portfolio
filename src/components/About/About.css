@@ -1,0 +1,12 @@
+.about {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 1vw;
+}
+
+.about img {
+  width: 15vw;
+  border: 1px black solid;
+}
