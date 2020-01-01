@@ -3,7 +3,7 @@ import "./About.css";
 import headshot from "../../images/headshot.jpg";
 // import Button from "../Button/Button";
 
-function About() {
+function About(props) {
   return (
     <div className="about">
       <img src={headshot} alt="Ben Miller headshot" />
