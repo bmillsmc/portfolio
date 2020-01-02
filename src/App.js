@@ -5,7 +5,7 @@ import Sidebar from "./components/Sidebar/Sidebar";
 import Home from "./components/Home/Home";
 import About from "./components/About/About";
 import Projects from "./components/Projects/Projects";
-import Resume from "./components/Resume/Resume";
+import Contact from "./components/Contact/Contact";
 
 class App extends Component {
   constructor(props) {
@@ -40,10 +40,10 @@ class App extends Component {
           }}
         />
         <Route
-          path="/resume"
+          path="/contact"
           exact
           render={() => {
-            return <Resume />;
+            return <Contact />;
           }}
         />
       </main>

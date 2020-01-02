@@ -4,9 +4,17 @@
   justify-content: flex-start;
   align-items: center;
   padding: 1vw;
+  width: 100vw;
 }
 
 .about img {
-  width: 15vw;
-  border: 1px black solid;
+  width: 35vw;
+  border: 1.5px rgb(128, 58, 58) solid;
+  padding: 1vw;
+  border-radius: 20px;
+}
+
+.about p {
+  width: 75%;
+  font-size: 2vw;
 }
