@@ -23,9 +23,7 @@ function About(props) {
         this is getting way too meta and im going to have to make the choice to
         commit or not
       </p>
-      <a href={pdf} target="_blank" rel="noopener noreferrer">
-        Resume
-      </a>
+      <Button text="Resume" link={pdf} medium file />
     </div>
   );
 }

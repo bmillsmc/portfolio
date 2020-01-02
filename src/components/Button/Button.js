@@ -11,7 +11,7 @@ function Button(props) {
   } else {
     classList += "buttonSmall ";
   }
-  if (props.link) {
+  if (props.link && !props.file) {
     if (props.link[0] === "/") {
       return (
         <div className={classList}>
