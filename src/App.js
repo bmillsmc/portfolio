@@ -5,7 +5,7 @@ import Sidebar from "./components/Sidebar/Sidebar";
 import Home from "./components/Home/Home";
 import About from "./components/About/About";
 import Projects from "./components/Projects/Projects";
-// import Resume from "./components/Resume/Resume";
+import Resume from "./components/Resume/Resume";
 
 class App extends Component {
   constructor(props) {
@@ -39,13 +39,13 @@ class App extends Component {
             return <Projects />;
           }}
         />
-        {/* <Route
+        <Route
           path="/resume"
           exact
           render={() => {
             return <Resume />;
           }}
-        /> */}
+        />
       </main>
     );
   }
