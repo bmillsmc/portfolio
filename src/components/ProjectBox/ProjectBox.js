@@ -17,7 +17,7 @@ function ProjectBox(props) {
       <img src={props.screen} alt={`screenshot of ${props.projectName}`} />
       <h3>{props.projectName}</h3>
       <p>{props.descriptionText}</p>
-      <Button text={buttonText} link={props.repoLink} />
+      <Button text={buttonText} link={props.repoLink} small />
     </div>
   );
 }

@@ -4,9 +4,9 @@ import "./Home.css";
 
 function Home(props) {
   return (
-    <div>
+    <div className="home">
       <h1>Ben B. Miller</h1>
-      <Button text="Github" link="https://github.com/bmillsmc" />
+      <Button text="Github" link="https://github.com/bmillsmc" large />
       <h2>Software Engineer</h2>
     </div>
   );

@@ -1,0 +1,27 @@
+.button {
+  border-radius: 7px;
+  background-color: aquamarine;
+}
+
+.button:hover {
+  background-color: aqua;
+  cursor: pointer;
+}
+
+.button:focus {
+  outline: none;
+}
+
+.button:hover:active {
+  box-shadow: -1px -1px grey;
+}
+
+.buttonSmall {
+}
+
+.buttonMedium {
+}
+
+.buttonLarge {
+  /* width: 5vw; */
+}
