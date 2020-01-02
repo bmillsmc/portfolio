@@ -1,3 +1,9 @@
+@keyframes pageLoad {
+  0% {
+    transform: translateX(0);
+  }
+}
+
 .sidebarContainer {
   height: 70vh;
   width: 10vw;
@@ -10,9 +16,10 @@
 
 #sidebar {
   background: lightblue;
-  /* max-height: 50vw; */
+  border-radius: 0 10px 10px 0;
   transform: translateX(calc(-100% + 10px));
-  transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1) 0.2s;
+  transition: transform 0.4s cubic-bezier(0.45, 0, 0.2, 1) 0.2s;
+  animation: 1.5s ease-out 0s 1 pageLoad;
   display: flex;
   flex-direction: column;
   justify-content: space-around;

@@ -7,7 +7,7 @@ import About from "./components/About/About";
 import Projects from "./components/Projects/Projects";
 // import Resume from "./components/Resume/Resume";
 
-//TODO: pass state for sidebar being open or shut with a mouseover event
+//TODO: pass callback function for sidebar pop on page render
 
 class App extends Component {
   constructor(props) {
