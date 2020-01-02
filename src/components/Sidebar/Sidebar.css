@@ -1,21 +1,36 @@
-.sidebar {
-  background: lightblue;
-  /* max-height: 50vw; */
-  height: 50vw;
+.sidebarContainer {
+  height: 70vh;
   width: 10vw;
   min-width: 10vw;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
-  align-items: center;
+  position: fixed;
+  top: 65px;
 }
 
-.sidebar a {
+#sidebar {
+  background: lightblue;
+  /* max-height: 50vw; */
+  transform: translateX(calc(-100% + 10px));
+  transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1) 0.2s;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  height: 100%;
+}
+
+.sidebarContainer:hover #sidebar {
+  transform: translateX(0);
+  transition-delay: 0s;
+}
+
+#sidebar a {
   text-decoration: none;
   color: blanchedalmond;
 }
 
-.sidebar h3 {
+#sidebar h3 {
   margin: 0;
   font-size: 2vw;
 }
