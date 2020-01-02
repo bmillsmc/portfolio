@@ -1,6 +1,7 @@
 .button {
   border-radius: 7px;
   background-color: aquamarine;
+  width: 100%;
 }
 
 .button:hover {
@@ -23,5 +24,12 @@
 }
 
 .buttonLarge {
-  /* width: 5vw; */
+  width: 5vw;
+}
+
+.buttonSmall,
+.buttonMedium,
+.buttonLarge {
+  border-radius: 7px;
+  box-sizing: border-box;
 }
