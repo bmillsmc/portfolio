@@ -1,6 +1,7 @@
 .sidebar {
   background: lightblue;
-  height: 60%;
+  /* max-height: 50vw; */
+  height: 50vw;
   width: 10vw;
   min-width: 10vw;
   display: flex;

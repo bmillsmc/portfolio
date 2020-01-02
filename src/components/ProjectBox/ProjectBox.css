@@ -1,0 +1,12 @@
+.projectBox {
+  max-width: 500px;
+  width: 40vw;
+  height: 40vw;
+  border: 1px black solid;
+  margin-bottom: 7vw;
+}
+
+.projectBox img {
+  width: 50%;
+  border: 1px black solid;
+}
