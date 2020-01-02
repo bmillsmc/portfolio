@@ -1,17 +1,13 @@
 import React from "react";
 import "./Button.css";
-import { Redirect } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 function Button(props) {
   if (props.link[0] === "/") {
     return (
-      <input
-        type="submit"
-        value={props.text}
-        onClick={() => {
-          return <Redirect to={props.link} />;
-        }}
-      />
+      <Link to={props.link}>
+        <input type="submit" value={props.text} />
+      </Link>
     );
   }
   return (
