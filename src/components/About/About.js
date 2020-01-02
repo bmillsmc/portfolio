@@ -2,6 +2,7 @@ import React from "react";
 import "./About.css";
 import headshot from "../../images/headshot.jpg";
 import Button from "../Button/Button";
+import pdf from "../../documents/bmresume.pdf";
 
 function About(props) {
   return (
@@ -22,7 +23,9 @@ function About(props) {
         this is getting way too meta and im going to have to make the choice to
         commit or not
       </p>
-      <Button text="Resume" link="/resume" medium />
+      <a href={pdf} target="_blank" rel="noopener noreferrer">
+        Resume
+      </a>
     </div>
   );
 }
