@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import "./App.css";
-import { Route } from "react-router-dom";
+import { Route, Switch, Redirect } from "react-router-dom";
 import Sidebar from "./components/Sidebar/Sidebar";
 import Home from "./components/Home/Home";
 import About from "./components/About/About";
@@ -14,38 +14,51 @@ class App extends Component {
   }
 
   render() {
-    //TODO: position sidebar over top of current route
     return (
       <main className="body">
         <Sidebar />
-        <Route
-          path="/"
-          exact
-          render={() => {
-            return <Home />;
-          }}
-        />
-        <Route
-          path="/about"
-          exact
-          render={() => {
-            return <About />;
-          }}
-        />
-        <Route
-          path="/projects"
-          exact
-          render={() => {
-            return <Projects />;
-          }}
-        />
-        <Route
-          path="/contact"
-          exact
-          render={() => {
-            return <Contact />;
-          }}
-        />
+        <Switch>
+          <Route
+            path="/"
+            exact
+            render={() => {
+              return <Redirect to="/home" />;
+            }}
+          />
+          <Route
+            path="/home"
+            exact
+            render={() => {
+              return <Home />;
+            }}
+          />
+          <Route
+            path="/about"
+            exact
+            render={() => {
+              return <About />;
+            }}
+          />
+          <Route
+            path="/projects"
+            exact
+            render={() => {
+              return <Projects />;
+            }}
+          />
+          <Route
+            path="/contact"
+            exact
+            render={() => {
+              return <Contact />;
+            }}
+          />
+          <Route
+            render={() => {
+              return <h1>Error: Page Not Found</h1>;
+            }}
+          />
+        </Switch>
       </main>
     );
   }

@@ -6,7 +6,7 @@ function Sidebar(props) {
   return (
     <div className="sidebarContainer">
       <nav id="sidebar">
-        <Link to="/">
+        <Link to="/home">
           <h3>Home</h3>
         </Link>
         <Link to="/about">
