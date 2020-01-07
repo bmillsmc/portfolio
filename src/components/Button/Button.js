@@ -3,7 +3,7 @@ import "./Button.css";
 import { Link } from "react-router-dom";
 
 function Button(props) {
-  let classList = "";
+  let classList = "button ";
   if (props.large) {
     classList += "buttonLarge ";
   } else if (props.medium) {
@@ -14,20 +14,16 @@ function Button(props) {
   if (props.link && !props.file) {
     if (props.link[0] === "/") {
       return (
-        <div className={classList}>
-          <Link to={props.link}>
-            <input type="submit" value={props.text} className="button" />
-          </Link>
-        </div>
+        <Link to={props.link}>
+          <input type="submit" value={props.text} className={classList} />
+        </Link>
       );
     }
   }
   return (
-    <div className={classList}>
-      <a href={props.link} target="_blank" rel="noopener noreferrer">
-        <input type="submit" value={props.text} className="button" />
-      </a>
-    </div>
+    <a href={props.link} target="_blank" rel="noopener noreferrer">
+      <input type="submit" value={props.text} className={classList} />
+    </a>
   );
 }
 

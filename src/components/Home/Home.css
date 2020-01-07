@@ -14,3 +14,11 @@
 .home h2 {
   font-size: 4vw;
 }
+
+.home .homeButtonContainer {
+  min-height: 5vh;
+  min-width: 10vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

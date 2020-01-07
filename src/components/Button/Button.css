@@ -26,12 +26,11 @@
 }
 
 .buttonLarge {
-  width: 5vw;
+  width: 15vw;
+  height: 7vh;
 }
 
 .buttonSmall,
 .buttonMedium,
 .buttonLarge {
-  border-radius: 7px;
-  box-sizing: border-box;
 }
