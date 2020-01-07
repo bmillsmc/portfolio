@@ -10,7 +10,9 @@ import Contact from "./components/Contact/Contact";
 class App extends Component {
   constructor(props) {
     super(props);
-    this.state = {};
+    this.pageNotFoundStyle = {
+      marginLeft: "5vw"
+    };
   }
 
   render() {
@@ -55,7 +57,9 @@ class App extends Component {
           />
           <Route
             render={() => {
-              return <h1>Error: Page Not Found</h1>;
+              return (
+                <h1 style={this.pageNotFoundStyle}>Error: Page Not Found</h1>
+              );
             }}
           />
         </Switch>
