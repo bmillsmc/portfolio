@@ -23,11 +23,15 @@
 }
 
 .buttonMedium {
+  width: 10vw;
+  height: 6vh;
+  font-size: 1.5vw;
 }
 
 .buttonLarge {
   width: 15vw;
   height: 7vh;
+  font-size: 2vw;
 }
 
 .buttonSmall,
