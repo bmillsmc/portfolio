@@ -16,6 +16,11 @@ class App extends Component {
     };
   }
 
+  componentDidMount() {
+    let sidebar = document.getElementById("sidebar");
+    sidebar.classList.remove("sidebarAnimation");
+  }
+
   render() {
     return (
       <main className="body">

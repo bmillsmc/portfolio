@@ -5,7 +5,7 @@ import "./Sidebar.css";
 function Sidebar(props) {
   return (
     <div className="sidebarContainer">
-      <nav id="sidebar">
+      <nav id="sidebar" className="sidebarAnimation">
         <Link to="/home">
           <h3>Home</h3>
         </Link>
