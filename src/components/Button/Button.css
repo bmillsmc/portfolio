@@ -20,9 +20,6 @@
   box-shadow: -1px -1px grey;
 }
 
-.buttonSmall {
-}
-
 .buttonMedium {
   width: 10vw;
   height: 6vh;
@@ -35,7 +32,18 @@
   font-size: 2vw;
 }
 
-.buttonSmall,
-.buttonMedium,
-.buttonLarge {
+@media only screen and (max-width: 786px) {
+  .buttonSmall {
+    padding: 2vw;
+  }
+  .buttonMedium {
+    width: 40vw;
+    font-size: 4.5vw;
+  }
+
+  .buttonLarge {
+    width: 65vw;
+    height: 10vh;
+    font-size: 8vw;
+  }
 }

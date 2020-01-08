@@ -26,6 +26,8 @@
 @media only screen and (max-width: 786px) {
   .home {
     justify-content: flex-start;
+    margin-top: 5vh;
+    height: 50vh;
   }
 
   .home h1 {
