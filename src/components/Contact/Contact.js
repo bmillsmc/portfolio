@@ -14,7 +14,7 @@ function Contact() {
         target="_blank"
         rel="noopener noreferrer"
       >
-        Email me at benbmiller123@gmail.com
+        <p>Email me at benbmiller123@gmail.com</p>
       </a>
       <a
         href="https://www.linkedin.com/in/ben-b-miller/"

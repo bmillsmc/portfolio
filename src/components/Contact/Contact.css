@@ -12,6 +12,7 @@
   color: rgb(136, 82, 79);
   font-weight: 700;
   margin: 1vh 0;
+  cursor: pointer;
 }
 
 .contact img {
@@ -20,9 +21,32 @@
   border-radius: 100px;
 }
 
+.contact p {
+  margin: 0;
+}
+
 .buttonHolder {
   display: flex;
   justify-content: space-between;
   align-items: center;
   width: 20vw;
+}
+
+@media only screen and (max-width: 786px) {
+  .buttonHolder {
+    flex-direction: column;
+  }
+
+  .contact img {
+    margin-top: 5vh;
+    width: 60vw;
+  }
+
+  .contact p {
+    font-size: 5vw;
+  }
+
+  .contact h3 {
+    font-size: 7vw;
+  }
 }
