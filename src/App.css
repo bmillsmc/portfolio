@@ -15,15 +15,13 @@
   transition: opacity 500ms ease-in;
 }
 
+.fade-enter-done {
+}
+
 .fade-exit {
-  opacity: 1;
-  position: absolute;
-  /* top: auto; */
-  top: 10vh;
+  opacity: 0;
 }
 
 .fade-exit-active {
-  /* transition: top 300ms ease-in; */
   opacity: 0;
-  transition: opacity 500ms ease-out;
 }
