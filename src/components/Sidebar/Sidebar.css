@@ -49,3 +49,23 @@
   margin: 0;
   font-size: 2vw;
 }
+
+@media only screen and (max-width: 786px) {
+  #sidebar {
+    animation: none;
+    transform: none;
+    transition: none;
+    border-radius: 0;
+  }
+
+  #sidebar h3 {
+    font-size: 6vw;
+  }
+
+  .sidebarContainer {
+    height: 20vh;
+    width: 100%;
+    top: initial;
+    position: initial;
+  }
+}
