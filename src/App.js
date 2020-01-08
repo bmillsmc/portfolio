@@ -18,11 +18,11 @@ class App extends Component {
 
   render() {
     return (
-      <Route
-        render={({ location }) => {
-          return (
-            <main className="body">
-              <Sidebar />
+      <main className="body">
+        <Sidebar />
+        <Route
+          render={({ location }) => {
+            return (
               <TransitionGroup>
                 <CSSTransition
                   key={location.key}
@@ -77,10 +77,10 @@ class App extends Component {
                   </Switch>
                 </CSSTransition>
               </TransitionGroup>
-            </main>
-          );
-        }}
-      />
+            );
+          }}
+        />
+      </main>
     );
   }
 }
