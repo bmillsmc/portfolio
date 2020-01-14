@@ -27,7 +27,7 @@ function Projects(props) {
           repoLink="https://github.com/CotripperPlatform/CoTrip"
         />
         <ProjectBox
-          number="0"
+          number="2"
           screen={trivia}
           projectName="Trivia Time"
           descriptionText="Trivia is a small game that I created to demonstrate my skills in DOM manipulation. I also utilized a trivia question API called OpenTrivia to add some replayability to the game. This was my first adventure in the form of a full web application and I am still happy with how it turned out."
